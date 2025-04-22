@@ -20,7 +20,7 @@ public class GameControllerScript : MonoBehaviour
         GameEventController.AddListener(listenableEvents, OnGameEvent);
         OnGameEvent(nameof(GameState), null);
 
-        seaLevel = GameObject.Find("Sea").transform.position.y;
+        seaLevel = GameObject.Find("Water").transform.position.y;
     }
 
 	private void OnGameEvent(string type, object payload)
